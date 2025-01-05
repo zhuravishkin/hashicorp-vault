@@ -21,7 +21,7 @@ public class SpringBootHashicorpVaultApplication implements CommandLineRunner {
 
     public SpringBootHashicorpVaultApplication() throws URISyntaxException {
         this.vaultTemplate = new VaultVersionedKeyValueTemplate(new VaultTemplate(VaultEndpoint.from(new URI("http://localhost:8200")),
-                new TokenAuthentication("hvs.2PZF3QpB0mOSTFrtwrAowmO0")), "secret");
+                new TokenAuthentication("")), "secret");
     }
 
     public static void main(String[] args) {
