@@ -1,10 +1,8 @@
 package com.zhuravishkin.springboothashicorpvault.model;
 
-import lombok.*;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import lombok.Getter;
 
-@Data
-@ConfigurationProperties("reeves")
+@Getter
 public class Credentials {
     private String username;
     private String password;
